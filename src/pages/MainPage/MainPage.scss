@@ -1,0 +1,43 @@
+.main {
+    .container {
+        width: 986px;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 16px;
+
+        .button-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+            }
+
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                font-size: 16px;
+                font-weight: 400;
+                background-color: var(--primary-color);
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .main {
+        .container {
+            padding: 0 16px;
+
+            .button-wrap {
+                .button {
+                    height: 46px;
+                }
+            }
+        }
+    }
+}

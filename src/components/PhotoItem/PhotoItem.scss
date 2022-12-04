@@ -1,0 +1,95 @@
+.photo-item {
+    position: relative;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover .photo_overlay {
+        display: flex;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .photo_overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        transition: all ease 5s;
+
+        .photo_content {
+            h3 {
+                font-size: 18px;
+                color: var(--white-color);
+                text-align: justify;
+                padding: 0 16px;
+                line-height: 24px;
+            }
+
+            .photo_actions {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 16px;
+                padding: 0 16px;
+
+                .button {
+                    width: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .photo-item {
+        .photo_overlay {
+            .photo_content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10px;
+
+                h3 {
+                    width: 100%;
+                    padding: 0;
+                    font-size: 14px;
+                }
+
+                .photo_actions {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 4px;
+                    padding: 0;
+                    width: 100%;
+
+                    .button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

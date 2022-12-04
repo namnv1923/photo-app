@@ -1,0 +1,29 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: 280px;
+
+    background-image: url('../../assets/images/orange-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h3 {
+        font-size: 40px;
+        letter-spacing: 0.5px;
+        color: var(--white-color);
+    }
+}
+
+@media (max-width: 426px) {
+    .banner {
+        height: 140px;
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+}

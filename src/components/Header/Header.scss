@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--white-color);
+    padding: 0 60px;
+    border-bottom: 1px solid #ccc;
+
+    img {
+        width: 40px;
+    }
+
+    .header-text {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--primary-color);
+    }
+}
+
+@media (max-width: 426px) {
+    .header {
+        padding: 0 16px;
+        height: 50px;
+
+        img {
+            width: 28px;
+        }
+
+        .header-text {
+            font-size: 16px;
+        }
+    }
+}
